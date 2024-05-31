@@ -126,8 +126,7 @@ return [
      'providers' => [
         // Laravel Framework Service Providers...
         Illuminate\Auth\AuthServiceProvider::class,
-        // Your Custom Providers...
-        HarayaTalk\Providers\HarayaTalkServiceProvider::class,
+HarayaTalk\Providers\HarayaTalkServiceProvider::class,
     ],
 
      'aliases' => [

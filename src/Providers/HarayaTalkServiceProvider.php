@@ -9,20 +9,20 @@ class HarayaTalkServiceProvider extends ServiceProvider
     public function register()
     {
         // Register package services
-        $this->mergeConfigFrom(__DIR__.'/../config/harayatalk.php', 'harayatalk');
+        $this->mergeConfigFrom(__DIR__ . '/../config/harayatalk.php', 'harayatalk');
     }
 
     public function boot()
     {
         // Publish configuration
         $this->publishes([
-            __DIR__.'/../config/harayatalk.php' => config_path('harayatalk.php'),
-        ]);
+            __DIR__ . '/../config/harayatalk.php' => config_path('harayatalk.php'),
+        ], 'config');
 
         // Load routes
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
 
         // Load migrations
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 }
