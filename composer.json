@@ -1,0 +1,21 @@
+{
+  "name": "harayatech/haraya-talk",
+  "description": "A standalone messaging system",
+  "type": "library",
+  "require": {
+    "php": "^7.4|^8.0",
+    "laravel/framework": "^8.0|^9.0|^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "HarayaTalk\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "HarayaTalk\\HarayaTalkServiceProvider"
+      ]
+    }
+  }
+}
